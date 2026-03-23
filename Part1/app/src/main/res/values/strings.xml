@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CustomCalculator</string>
+
+    <!-- Ugly Wireframe Strings -->
+    <string name="student_id_badge">ID:12345</string>
+    <string name="student_name">John Doe</string>
+    <string name="department_name">Computer Science Department</string>
+
+    <!-- Content Descriptions for Images -->
+    <string name="desc_logo">University Logo</string>
+    <string name="desc_profile">Student Profile Picture</string>
+    <string name="desc_qr_code">QR Code</string>
+
+    <!-- Campus Password Strings -->
+    <string name="campus_password_title">🔐 Campus Password</string>
+    <string name="student_id_label">Student ID:</string>
+    <string name="student_id_hint">Enter your student ID (e.g., 123456)</string>
+    <string name="password_label">Password:</string>
+    <string name="password_hint">Enter password</string>
+    <string name="submit_button">Submit</string>
+    <string name="access_granted">✅ ACCESS GRANTED!\nWelcome to the campus network!</string>
+    <string name="access_denied">❌ ACCESS DENIED!</string>
+    <string name="error_no_student_id">❌ Please enter your Student ID</string>
+    <string name="error_no_password">❌ Please enter your password</string>
+</resources>
