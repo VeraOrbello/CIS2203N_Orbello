@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Echo App</string>
+    <string name="echo_received_title">Echo Received</string>
+    <string name="echo_subtitle">Your message resonates through the light</string>
+    <string name="message_received_label">Message Received</string>
+    <string name="back_button_text">Return to Light</string>
+    <string name="echo_app_title">Echo Hologram</string>
+    <string name="echo_main_subtitle">Send a message through the light</string>
+    <string name="input_label">Your Message</string>
+    <string name="send_button_text">Send Message</string>
+    <string name="share_button_text">Share Through Light</string>
+    <string name="message_hint">Type your message...</string>
+</resources>
