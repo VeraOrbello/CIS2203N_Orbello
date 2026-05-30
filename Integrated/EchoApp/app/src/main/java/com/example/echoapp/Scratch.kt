@@ -1,10 +1,18 @@
 package com.example.echoapp
 
+data class User(
+    val username: String,
+    var score: Int
+)
+
 fun main() {
-    val name = "Vera"
-    var age = 20
+    val users = listOf(
+        User("Alice",100),
+        User("Bob",90),
+        User("Charlie",80)
+    )
 
-    age += 1
-
-    println("My name is $name and I am $age years old.")
+    for(user in users) {
+        println(user)
+    }
 }
