@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="glass_dark">#CC1A1A2E</color>
+    <color name="glass_white">#E6FFFFFF</color>
+    <color name="holographic_blue">#4FACFE</color>
+    <color name="holographic_cyan">#00F5A0</color>
+    <color name="holographic_pink">#FF6B9E</color>
+    <color name="holographic_purple">#A18CD1</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#E0E0E0</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Echo App</string>
+    <string name="back_button_text">Return to Light</string>
+    <string name="echo_app_title">Echo Hologram</string>
+    <string name="echo_main_subtitle">Send a message through the light</string>
+    <string name="echo_received_title">Echo Received</string>
+    <string name="echo_subtitle">Your message resonates through the light</string>
+    <string name="input_label">Your Message</string>
+    <string name="message_hint">Type your message...</string>
+    <string name="message_received_label">Message Received</string>
+    <string name="send_button_text">Send Message</string>
+    <string name="share_button_text">Share Through Light</string>
+    <style name="Base.Theme.EchoApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.EchoApp" parent="Base.Theme.EchoApp"/>
+</resources>

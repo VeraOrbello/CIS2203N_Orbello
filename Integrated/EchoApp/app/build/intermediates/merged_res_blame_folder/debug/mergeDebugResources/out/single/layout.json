@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.echoapp-mergeDebugResources-26:/layout/activity_main.xml",
+        "source": "com.example.echoapp-main-29:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.echoapp-mergeDebugResources-26:/layout/activity_echo.xml",
+        "source": "com.example.echoapp-main-29:/layout/activity_echo.xml"
+    }
+]

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_holographic_gradient"
+    tools:context=".EchoActivity">
+
+    <!-- Animated Glow Effect Overlay -->
+    <View
+        android:id="@+id/glowOverlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_glow_effect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Main Content Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="24dp"
+        app:cardBackgroundColor="@color/glass_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Holographic Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✦ ECHO RECEIVED ✦"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:letterSpacing="0.1"
+                android:shadowColor="#4FACFE"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your message resonates through the light"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:fontFamily="sans-serif-light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                android:layout_marginTop="8dp" />
+
+            <!-- Gradient Line Divider -->
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_gradient_line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+                android:layout_marginTop="24dp" />
+
+            <!-- Received Label -->
+            <TextView
+                android:id="@+id/tvReceivedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✦ MESSAGE RECEIVED ✦"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/holographic_cyan"
+                android:letterSpacing="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider"
+                android:layout_marginTop="24dp" />
+
+            <!-- Holographic Message Display -->
+            <TextView
+                android:id="@+id/tvEchoMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:padding="24dp"
+                android:gravity="center"
+                android:background="@drawable/bg_glass_input"
+                android:fontFamily="sans-serif-light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvReceivedLabel"
+                android:layout_marginTop="12dp"
+                android:minHeight="150dp" />
+
+            <!-- Back Button - Holographic Style -->
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:text="⟵ RETURN TO LIGHT ⟵"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:background="@drawable/bg_holographic_button"
+                android:stateListAnimator="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEchoMessage"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
