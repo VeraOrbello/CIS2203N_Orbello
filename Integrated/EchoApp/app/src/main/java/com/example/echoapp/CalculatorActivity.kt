@@ -1,7 +1,8 @@
 package com.example.echoapp
 
 class CalculatorActivity {
-    private var currentInput = ""
-    private var firstOperand = 0.0
-    private var currentOperator = ""
+
+    fun addNumbers(a: Double, b: Double): Double {
+        return a + b
+    }
 }
