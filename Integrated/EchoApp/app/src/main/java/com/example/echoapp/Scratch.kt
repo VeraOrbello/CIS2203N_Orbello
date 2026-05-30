@@ -1,10 +1,9 @@
 package com.example.echoapp
 
+fun greetUser(name: String): String {
+    return "Hello, $name!"
+}
+
 fun main() {
-    val name = "Vera"
-    var age = 20
-
-    age += 1
-
-    println("My name is $name and I am $age years old.")
+    println(greetUser("Vera"))
 }
