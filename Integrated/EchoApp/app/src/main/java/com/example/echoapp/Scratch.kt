@@ -1,10 +1,11 @@
 package com.example.echoapp
 
 fun main() {
-    val name = "Vera"
-    var age = 20
+    var nickname: String? = null
 
-    age += 1
+    println(nickname?.length)
 
-    println("My name is $name and I am $age years old.")
+    nickname = "Vera"
+
+    println(nickname?.length)
 }
