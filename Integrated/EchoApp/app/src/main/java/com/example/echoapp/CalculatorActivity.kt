@@ -1,8 +1,10 @@
 package com.example.echoapp
 
 class CalculatorActivity {
+    private var currentInput = ""
 
-    fun addNumbers(a: Double, b: Double): Double {
-        return a + b
+    fun parseInput(): Double {
+        val number = currentInput.toDoubleOrNull() ?: 0.0
+        return number
     }
 }
